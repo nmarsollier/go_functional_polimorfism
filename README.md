@@ -79,6 +79,8 @@ Tendríamos que programar :
 
 Ya no me dan ganas ni de programar el ejemplo, no quiero ni contar las lineas de código.
 
+Lo mas probable que la próxima vez que enfrentes un caso de polimorfismo te preguntes, porque tengo que programar todo esto.
+
 ## Nota
 
 Esta es una serie de notas sobre patrones simples de programación en GO.
