@@ -19,7 +19,9 @@ var GetImage = map[string]func(id string) string{
 }
 ```
 
-Si es un simple mapa con funciones para cada caso, en lenguajes como Kotlin podriamos definir un Enum, pero para los fines de Go un map funciona perfecto.
+Si, es un simple mapa con funciones para cada caso, en lenguajes como Kotlin podríamos definir un Enum, pero para los fines de Go un map funciona perfecto.
+
+Es un comportamiento muy simple, una función, pero si hacemos volar un poco la imaginación, podemos darnos cuenta que podría ser una estructura lo que retornemos, com punteros a funciones sobrecargadas según sea el caso, y funcionaria muy bien.
 
 Este código se usa como:
 
@@ -43,6 +45,7 @@ func IsValidDevice(device string) bool {
 
 * Bueno, la llamada a la función no es algo típico de ver
 * Funciona solo para una función, pero si tenemos en cuenta el principio de single responsability, puedo vivir con ello.
+* Si la sobrecarga del modulo es muy grande, bueno ya no conviene mucho esta estrategia.
 * Mockear los tests puede ser un poquito mas hacky.
 
 ## Pero veamos que nos ahorramos, por si no lo notamos 
@@ -78,6 +81,8 @@ Tendríamos que programar :
 * Una función de validación igual de fea que en el caso anterior
 
 Ya no me dan ganas ni de programar el ejemplo, no quiero ni contar las lineas de código.
+
+Incluso un enfoque funcional nos permite definir sobrecargas de comportamientos para funciones puntuales, cuando muchas veces nos quejamos que Go no maneja Herencias, con la estrategia original, solo sobrecargamos comportamiento donde debe ser.
 
 Lo mas probable que la próxima vez que enfrentes un caso de polimorfismo te preguntes, ¿ porque tengo que programar todo esto ?
 
