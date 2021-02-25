@@ -79,7 +79,7 @@ Tendríamos que programar :
 
 Ya no me dan ganas ni de programar el ejemplo, no quiero ni contar las lineas de código.
 
-Lo mas probable que la próxima vez que enfrentes un caso de polimorfismo te preguntes, porque tengo que programar todo esto.
+Lo mas probable que la próxima vez que enfrentes un caso de polimorfismo te preguntes, ¿ porque tengo que programar todo esto ?
 
 ## Nota
 
