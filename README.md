@@ -1,3 +1,5 @@
+[English version](https://github.com/nmarsollier/go_functional_polimorfism/blob/main/README_en.md))
+
 # Polimorfismo con Funciones
 
 Uno de los aspectos mas decisivos a la hora de crear interfaces en Go es el uso de polimorfismo.
@@ -90,4 +92,4 @@ Lo mas probable que la próxima vez que enfrentes un caso de polimorfismo te pre
 
 Esta es una serie de notas sobre patrones simples de programación en GO.
 
-[Tabla de Contenidos](https://github.com/nmarsollier/go_index)
+[Tabla de Contenidos](https://github.com/nmarsollier/go_index/blob/main/README.md)
