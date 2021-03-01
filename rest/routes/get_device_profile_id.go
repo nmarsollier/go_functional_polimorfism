@@ -1,10 +1,10 @@
-package controllers
+package routes
 
 import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nmarsollier/go_functional_polimorfism/profile"
+	"github.com/nmarsollier/go_functional_polimorfism/model/profile"
 	"github.com/nmarsollier/go_functional_polimorfism/utils/errors"
 )
 

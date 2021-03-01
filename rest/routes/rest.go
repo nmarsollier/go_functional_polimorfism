@@ -1,8 +1,8 @@
-package controllers
+package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/nmarsollier/go_functional_polimorfism/middlewares"
+	"github.com/nmarsollier/go_functional_polimorfism/rest/middlewares"
 )
 
 // Start server in 8080 port

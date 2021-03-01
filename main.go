@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/nmarsollier/go_functional_polimorfism/controllers"
+	"github.com/nmarsollier/go_functional_polimorfism/rest/routes"
 )
 
 func main() {
-	controllers.Start()
+	routes.Start()
 }
