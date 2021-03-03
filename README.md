@@ -10,7 +10,7 @@ Digamos que tenemos un servicio rest que retorna datos del perfil de un usuario,
 
 Vamos una estrategia que me encanta como funciona :
 
-```
+```go
 var GetImage = map[string]func(id string) string{
 	"mobile": func(id string) string {
 		return fmt.Sprintf("resource_%s", id)
@@ -27,7 +27,7 @@ Es un comportamiento muy simple, una función, pero si hacemos volar un poco la 
 
 Este código se usa como:
 
-```
+```go
 profile.GetImage[device](id)
 ```
 
@@ -35,7 +35,7 @@ Sencillo y elegante.
 
 Incluso nos proporciona una función de validación de parámetros que es muy directa, y nos permite agregar nuevos devices sin mayores costos :
 
-```
+```go
 // IsValidDevice checks if device is valid
 func IsValidDevice(device string) bool {
 	_, ok := GetImage[device]
@@ -54,7 +54,7 @@ func IsValidDevice(device string) bool {
 
 ### Si lo hubiéramos hecho con funciones al estilo clásico funcional
 
-```
+```go
 func GetImage(device, id string) string{
 	switch device {
 	case "mobile":

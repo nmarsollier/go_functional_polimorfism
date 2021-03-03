@@ -10,7 +10,7 @@ Lets say that we have a rest service that returns user profile data, but dependi
 
 A working strategy that works pretty well, and personally I like is :
 
-```
+```go
 var GetImage = map[string]func(id string) string{
 	"mobile": func(id string) string {
 		return fmt.Sprintf("resource_%s", id)
@@ -25,7 +25,7 @@ Yes, it's a simple map with functions, in languages like Kotlin we have enums, t
 
 That code is used like:
 
-```
+```go
 profile.GetImage[device](id)
 ```
 
@@ -35,7 +35,7 @@ This behavior is simple, a function, but we could try, for example, map a struct
 
 Indeed is so good, that allows us to write very direct validation function for available devices, without neuronal cost :
 
-```
+```go
 // IsValidDevice checks if device is valid
 func IsValidDevice(device string) bool {
 	_, ok := GetImage[device]
@@ -54,7 +54,7 @@ func IsValidDevice(device string) bool {
 
 ### Doing the last example just with a function
 
-```
+```go
 func GetImage(device, id string) string{
 	switch device {
 	case "mobile":
